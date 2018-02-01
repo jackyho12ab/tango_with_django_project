@@ -27,10 +27,3 @@ class Page(models.Model):
     def __str__(self):
         return self.title
 
-
-class PageAdmin(admin.ModelAdmin):
-    list_display = ('title', 'category', 'url')
-
-class CategoryAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug':('name',)}
-
