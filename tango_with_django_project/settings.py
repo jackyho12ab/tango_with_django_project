@@ -27,6 +27,9 @@ MEDIA_ROOT = MEDIA_DIR
 
 MEDIA_URL = '/media/'
 
+LOGIN_URL = '/rango/login/'
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -113,7 +116,8 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
         'OPTIONS': { 'min_length': 6, }
-    },
+    },
+
 ]
 
 PASSWORD_HASHERS = (
@@ -123,7 +127,8 @@ PASSWORD_HASHERS = (
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 )
 
-
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
